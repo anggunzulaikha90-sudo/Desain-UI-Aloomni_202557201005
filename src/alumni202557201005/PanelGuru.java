@@ -85,7 +85,6 @@ public class PanelGuru extends javax.swing.JPanel {
 
         jLabel1.setText("NIP");
 
-        jTextField1.setText("jTextField1");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
