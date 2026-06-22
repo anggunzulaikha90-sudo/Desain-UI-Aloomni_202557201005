@@ -44,205 +44,206 @@ public class MainFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        btnDashboard = new javax.swing.JButton();
+        btnJurusan = new javax.swing.JButton();
+        btnGuru = new javax.swing.JButton();
+        btnKelas = new javax.swing.JButton();
+        btnSiswa = new javax.swing.JButton();
+        btnAbout = new javax.swing.JButton();
+        btnLogout = new javax.swing.JButton();
         PanelContent = new javax.swing.JPanel();
-        panelSidebar = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        bDashboard = new javax.swing.JButton();
-        bJurusan = new javax.swing.JButton();
-        bGuru = new javax.swing.JButton();
-        bKelas = new javax.swing.JButton();
-        bSiswa = new javax.swing.JButton();
-        bAbout = new javax.swing.JButton();
-        bLogout = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(961, 604));
-        setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(961, 604));
+
+        jPanel1.setBackground(new java.awt.Color(114, 167, 239));
+        jPanel1.setMinimumSize(new java.awt.Dimension(150, 604));
+        jPanel1.setPreferredSize(new java.awt.Dimension(150, 604));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-graduation-32.png"))); // NOI18N
+        jLabel1.setText("Aloomni");
+
+        btnDashboard.setBackground(new java.awt.Color(114, 167, 239));
+        btnDashboard.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnDashboard.setForeground(new java.awt.Color(255, 255, 255));
+        btnDashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-dashboard-gauge-18.png"))); // NOI18N
+        btnDashboard.setText("Dashboard");
+        btnDashboard.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
+        btnDashboard.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnDashboard.setIconTextGap(10);
+        btnDashboard.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDashboardActionPerformed(evt);
+            }
+        });
+
+        btnJurusan.setBackground(new java.awt.Color(114, 167, 239));
+        btnJurusan.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnJurusan.setForeground(new java.awt.Color(255, 255, 255));
+        btnJurusan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-building-18.png"))); // NOI18N
+        btnJurusan.setText("Jurusan");
+        btnJurusan.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
+        btnJurusan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnJurusan.setIconTextGap(10);
+        btnJurusan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJurusanActionPerformed(evt);
+            }
+        });
+
+        btnGuru.setBackground(new java.awt.Color(114, 167, 239));
+        btnGuru.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnGuru.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-classroom-19.png"))); // NOI18N
+        btnGuru.setText("Guru");
+        btnGuru.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
+        btnGuru.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnGuru.setIconTextGap(10);
+        btnGuru.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuruActionPerformed(evt);
+            }
+        });
+
+        btnKelas.setBackground(new java.awt.Color(114, 167, 239));
+        btnKelas.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnKelas.setForeground(new java.awt.Color(255, 255, 255));
+        btnKelas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-class-18.png"))); // NOI18N
+        btnKelas.setText("Kelas");
+        btnKelas.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
+        btnKelas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnKelas.setIconTextGap(10);
+        btnKelas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnKelasActionPerformed(evt);
+            }
+        });
+
+        btnSiswa.setBackground(new java.awt.Color(114, 167, 239));
+        btnSiswa.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnSiswa.setForeground(new java.awt.Color(255, 255, 255));
+        btnSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-person-18.png"))); // NOI18N
+        btnSiswa.setText("Siswa");
+        btnSiswa.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
+        btnSiswa.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnSiswa.setIconTextGap(10);
+        btnSiswa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiswaActionPerformed(evt);
+            }
+        });
+
+        btnAbout.setBackground(new java.awt.Color(114, 167, 239));
+        btnAbout.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnAbout.setForeground(new java.awt.Color(255, 255, 255));
+        btnAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-about-18.png"))); // NOI18N
+        btnAbout.setText("About");
+        btnAbout.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
+        btnAbout.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnAbout.setIconTextGap(10);
+        btnAbout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAboutActionPerformed(evt);
+            }
+        });
+
+        btnLogout.setBackground(new java.awt.Color(114, 167, 239));
+        btnLogout.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnLogout.setForeground(new java.awt.Color(255, 255, 255));
+        btnLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-logout-18.png"))); // NOI18N
+        btnLogout.setText("Logout");
+        btnLogout.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
+        btnLogout.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnLogout.setIconTextGap(10);
+        btnLogout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLogoutActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnDashboard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnJurusan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnGuru, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnKelas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnSiswa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnAbout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnLogout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel1)
+                .addGap(59, 59, 59)
+                .addComponent(btnDashboard)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnJurusan)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnGuru)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnKelas)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnSiswa)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnAbout)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnLogout)
+                .addContainerGap(315, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(jPanel1, java.awt.BorderLayout.LINE_START);
 
         PanelContent.setMinimumSize(new java.awt.Dimension(802, 604));
         PanelContent.setPreferredSize(new java.awt.Dimension(802, 604));
         PanelContent.setLayout(new java.awt.CardLayout());
-        getContentPane().add(PanelContent, java.awt.BorderLayout.LINE_END);
-
-        panelSidebar.setBackground(new java.awt.Color(114, 167, 239));
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-graduation-32.png"))); // NOI18N
-        jLabel2.setText("Aloomni");
-
-        bDashboard.setBackground(new java.awt.Color(114, 167, 239));
-        bDashboard.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        bDashboard.setForeground(new java.awt.Color(255, 255, 255));
-        bDashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-dashboard-gauge-18.png"))); // NOI18N
-        bDashboard.setText("Dashboard");
-        bDashboard.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
-        bDashboard.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        bDashboard.setIconTextGap(10);
-        bDashboard.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bDashboardActionPerformed(evt);
-            }
-        });
-
-        bJurusan.setBackground(new java.awt.Color(114, 167, 239));
-        bJurusan.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        bJurusan.setForeground(new java.awt.Color(255, 255, 255));
-        bJurusan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-building-18.png"))); // NOI18N
-        bJurusan.setText("Jurusan");
-        bJurusan.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
-        bJurusan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        bJurusan.setIconTextGap(10);
-        bJurusan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bJurusanActionPerformed(evt);
-            }
-        });
-
-        bGuru.setBackground(new java.awt.Color(114, 167, 239));
-        bGuru.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        bGuru.setForeground(new java.awt.Color(255, 255, 255));
-        bGuru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-classroom-19.png"))); // NOI18N
-        bGuru.setText("Guru");
-        bGuru.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
-        bGuru.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        bGuru.setIconTextGap(10);
-        bGuru.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bGuruActionPerformed(evt);
-            }
-        });
-
-        bKelas.setBackground(new java.awt.Color(114, 167, 239));
-        bKelas.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        bKelas.setForeground(new java.awt.Color(255, 255, 255));
-        bKelas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-class-18.png"))); // NOI18N
-        bKelas.setText("Kelas");
-        bKelas.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
-        bKelas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        bKelas.setIconTextGap(10);
-        bKelas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bKelasActionPerformed(evt);
-            }
-        });
-
-        bSiswa.setBackground(new java.awt.Color(114, 167, 239));
-        bSiswa.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        bSiswa.setForeground(new java.awt.Color(255, 255, 255));
-        bSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-person-18.png"))); // NOI18N
-        bSiswa.setText("Siswa");
-        bSiswa.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
-        bSiswa.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        bSiswa.setIconTextGap(10);
-        bSiswa.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bSiswaActionPerformed(evt);
-            }
-        });
-
-        bAbout.setBackground(new java.awt.Color(114, 167, 239));
-        bAbout.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        bAbout.setForeground(new java.awt.Color(255, 255, 255));
-        bAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-about-18.png"))); // NOI18N
-        bAbout.setText("About Us");
-        bAbout.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
-        bAbout.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        bAbout.setIconTextGap(10);
-        bAbout.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bAboutActionPerformed(evt);
-            }
-        });
-
-        bLogout.setBackground(new java.awt.Color(114, 167, 239));
-        bLogout.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        bLogout.setForeground(new java.awt.Color(255, 255, 255));
-        bLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202557201005/img/Aloomni/icons8-logout-18.png"))); // NOI18N
-        bLogout.setText("Logout");
-        bLogout.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
-        bLogout.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        bLogout.setIconTextGap(10);
-        bLogout.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bLogoutActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelSidebarLayout = new javax.swing.GroupLayout(panelSidebar);
-        panelSidebar.setLayout(panelSidebarLayout);
-        panelSidebarLayout.setHorizontalGroup(
-            panelSidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
-            .addComponent(bDashboard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(bJurusan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(bGuru, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(bKelas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(bSiswa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(bAbout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(bLogout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        panelSidebarLayout.setVerticalGroup(
-            panelSidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelSidebarLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jLabel2)
-                .addGap(52, 52, 52)
-                .addComponent(bDashboard)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(bJurusan)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(bGuru)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(bKelas)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(bSiswa)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(bAbout)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(bLogout)
-                .addContainerGap(283, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(panelSidebar, java.awt.BorderLayout.CENTER);
+        getContentPane().add(PanelContent, java.awt.BorderLayout.CENTER);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void bDashboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bDashboardActionPerformed
+    private void btnDashboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDashboardActionPerformed
         // TODO add your handling code here:
         cardLayout.show(PanelContent, "dashboard");
-    }//GEN-LAST:event_bDashboardActionPerformed
+    }//GEN-LAST:event_btnDashboardActionPerformed
 
-    private void bJurusanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bJurusanActionPerformed
+    private void btnJurusanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJurusanActionPerformed
         // TODO add your handling code here:
         cardLayout.show(PanelContent, "jurusan");
-    }//GEN-LAST:event_bJurusanActionPerformed
+    }//GEN-LAST:event_btnJurusanActionPerformed
 
-    private void bGuruActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bGuruActionPerformed
+    private void btnGuruActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuruActionPerformed
         // TODO add your handling code here:
         cardLayout.show(PanelContent, "guru");
-    }//GEN-LAST:event_bGuruActionPerformed
+    }//GEN-LAST:event_btnGuruActionPerformed
 
-    private void bKelasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bKelasActionPerformed
+    private void btnKelasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKelasActionPerformed
         // TODO add your handling code here:
         cardLayout.show(PanelContent, "kelas");
-    }//GEN-LAST:event_bKelasActionPerformed
+    }//GEN-LAST:event_btnKelasActionPerformed
 
-    private void bSiswaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSiswaActionPerformed
+    private void btnSiswaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiswaActionPerformed
         // TODO add your handling code here:
         cardLayout.show(PanelContent, "siswa");
-    }//GEN-LAST:event_bSiswaActionPerformed
+    }//GEN-LAST:event_btnSiswaActionPerformed
 
-    private void bAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAboutActionPerformed
+    private void btnAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAboutActionPerformed
         // TODO add your handling code here:
         cardLayout.show(PanelContent, "about");
-    }//GEN-LAST:event_bAboutActionPerformed
+    }//GEN-LAST:event_btnAboutActionPerformed
 
-    private void bLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bLogoutActionPerformed
+    private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
         // TODO add your handling code here:
         int pilihan = JOptionPane.showConfirmDialog(
                 null,
@@ -259,7 +260,8 @@ public class MainFrame extends javax.swing.JFrame {
             default:
                 break;
         }
-    }//GEN-LAST:event_bLogoutActionPerformed
+
+    }//GEN-LAST:event_btnLogoutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -298,7 +300,16 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton bKelas;
     private javax.swing.JButton bLogout;
     private javax.swing.JButton bSiswa;
+    private javax.swing.JButton btnAbout;
+    private javax.swing.JButton btnDashboard;
+    private javax.swing.JButton btnGuru;
+    private javax.swing.JButton btnJurusan;
+    private javax.swing.JButton btnKelas;
+    private javax.swing.JButton btnLogout;
+    private javax.swing.JButton btnSiswa;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel panelSidebar;
     // End of variables declaration//GEN-END:variables
 }
