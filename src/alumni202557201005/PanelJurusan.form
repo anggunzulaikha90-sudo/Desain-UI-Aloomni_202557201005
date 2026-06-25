@@ -4,7 +4,7 @@
   <Properties>
     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
       <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-        <LineBorder thickness="7">
+        <LineBorder thickness="20">
           <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
         </LineBorder>
       </Border>
@@ -143,7 +143,7 @@
                               <Component id="jButton4" min="-2" pref="115" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="224" max="32767" attributes="0"/>
+                      <EmptySpace pref="198" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>

@@ -44,7 +44,7 @@ public class MainFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        panelSidebar = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnDashboard = new javax.swing.JButton();
         btnJurusan = new javax.swing.JButton();
@@ -59,9 +59,9 @@ public class MainFrame extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(961, 604));
         setPreferredSize(new java.awt.Dimension(961, 604));
 
-        jPanel1.setBackground(new java.awt.Color(114, 167, 239));
-        jPanel1.setMinimumSize(new java.awt.Dimension(150, 604));
-        jPanel1.setPreferredSize(new java.awt.Dimension(150, 604));
+        panelSidebar.setBackground(new java.awt.Color(114, 167, 239));
+        panelSidebar.setMinimumSize(new java.awt.Dimension(150, 604));
+        panelSidebar.setPreferredSize(new java.awt.Dimension(150, 604));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -167,10 +167,10 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout panelSidebarLayout = new javax.swing.GroupLayout(panelSidebar);
+        panelSidebar.setLayout(panelSidebarLayout);
+        panelSidebarLayout.setHorizontalGroup(
+            panelSidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(btnDashboard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(btnJurusan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(btnGuru, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -180,9 +180,9 @@ public class MainFrame extends javax.swing.JFrame {
             .addComponent(btnLogout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        panelSidebarLayout.setVerticalGroup(
+            panelSidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelSidebarLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel1)
                 .addGap(59, 59, 59)
@@ -202,7 +202,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap(315, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel1, java.awt.BorderLayout.LINE_START);
+        getContentPane().add(panelSidebar, java.awt.BorderLayout.LINE_START);
 
         PanelContent.setMinimumSize(new java.awt.Dimension(802, 604));
         PanelContent.setPreferredSize(new java.awt.Dimension(802, 604));
@@ -293,13 +293,6 @@ public class MainFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PanelContent;
-    private javax.swing.JButton bAbout;
-    private javax.swing.JButton bDashboard;
-    private javax.swing.JButton bGuru;
-    private javax.swing.JButton bJurusan;
-    private javax.swing.JButton bKelas;
-    private javax.swing.JButton bLogout;
-    private javax.swing.JButton bSiswa;
     private javax.swing.JButton btnAbout;
     private javax.swing.JButton btnDashboard;
     private javax.swing.JButton btnGuru;
@@ -308,8 +301,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnLogout;
     private javax.swing.JButton btnSiswa;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel panelSidebar;
     // End of variables declaration//GEN-END:variables
 }

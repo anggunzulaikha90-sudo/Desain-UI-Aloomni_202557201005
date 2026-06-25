@@ -44,6 +44,7 @@ public class PanelDashboardNew extends javax.swing.JPanel {
         jLabel12 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
+        setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 20));
         setMinimumSize(new java.awt.Dimension(802, 604));
         setPreferredSize(new java.awt.Dimension(802, 604));
         setLayout(new java.awt.CardLayout());

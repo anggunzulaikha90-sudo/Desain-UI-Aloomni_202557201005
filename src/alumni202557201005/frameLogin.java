@@ -5,8 +5,15 @@
 package alumni202557201005;
 
 import com.formdev.flatlaf.FlatLightLaf;
+import com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping;
+import java.awt.HeadlessException;
+import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  *
@@ -43,7 +50,7 @@ public class frameLogin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        tUser = new javax.swing.JTextField();
+        tUserName = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         btnLogin = new javax.swing.JButton();
 
@@ -71,9 +78,9 @@ public class frameLogin extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Username");
 
-        tUser.addActionListener(new java.awt.event.ActionListener() {
+        tUserName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tUserActionPerformed(evt);
+                tUserNameActionPerformed(evt);
             }
         });
 
@@ -84,6 +91,11 @@ public class frameLogin extends javax.swing.JFrame {
         btnLogin.setBackground(new java.awt.Color(102, 102, 255));
         btnLogin.setForeground(new java.awt.Color(255, 255, 255));
         btnLogin.setText("Login");
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoginActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -102,7 +114,7 @@ public class frameLogin extends javax.swing.JFrame {
                             .addComponent(jLabel3)
                             .addComponent(tPassword)
                             .addComponent(jLabel4)
-                            .addComponent(tUser)
+                            .addComponent(tUserName)
                             .addComponent(btnLogin, javax.swing.GroupLayout.DEFAULT_SIZE, 223, Short.MAX_VALUE))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -121,7 +133,7 @@ public class frameLogin extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tUser, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tUserName, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -146,14 +158,65 @@ public class frameLogin extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void tUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tUserActionPerformed
+    private void tUserNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tUserNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tUserActionPerformed
+    }//GEN-LAST:event_tUserNameActionPerformed
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+        // TODO add your handling code here:
+        // Ambil teks yang dimasukkan user pada field username
+        String username = tUserName.getText();
+        
+        // Ambil teks yang dimasukkan user pada field password
+        String password = tPassword.getText();
+        
+        // Periksa apakah username dan password tidak kosong
+        if (username.length() != 0 && password.length() != 0) {
+            
+            try {
+                // Query SQL untuk mencari user dengan username dan password (dihash dengan MD5)
+                String sql = "SELECT * FROM user WHERE username=? AND password= md5(?)";
+
+                // Buat koneksi ke database
+                Connection con = koneksi.konek();
+
+                // Siapkan statement SQL dengan parameter
+                PreparedStatement ps = con.prepareStatement(sql);
+
+                // Isi parameter pertama (?) dengan username
+                ps.setString(1, username);
+
+                // Isi parameter kedua (?) dengan password yang akan di-hash MD5 di isi database
+                ps.setString(2, password);
+
+                // Jalankan query dan ambil hasilnya
+                ResultSet rs = ps.executeQuery();
+
+                // Jika hasil Query memiliki baris (berarti login berhasil)
+                if (rs.next()) {
+                    // Tutup form login
+                    dispose();
+
+                    // Buka form Dashboard
+                    new MainFrame().setVisible(true);
+                    
+                } else {
+                    // Jika data tidak ditemukan, tampilkan pesan error
+                    JOptionPane.showMessageDialog(null, "Username/password salah");
+                }
+            } catch (SQLException sQLException) {
+                JOptionPane.showMessageDialog(null, sQLException.getMessage());
+            }
+        } else {
+            // Jika username atau password kosong, beri peringatan ke suser
+            JOptionPane.showMessageDialog(null, "Username/password tidak boleh kosong");
+        }
+    }//GEN-LAST:event_btnLoginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -189,6 +252,6 @@ public class frameLogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField tPassword;
-    private javax.swing.JTextField tUser;
+    private javax.swing.JTextField tUserName;
     // End of variables declaration//GEN-END:variables
 }
