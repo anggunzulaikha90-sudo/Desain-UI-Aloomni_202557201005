@@ -324,6 +324,8 @@ public class PanelSiswa extends javax.swing.JPanel {
 
         jLabel7.setText("Tanggal Lahir");
 
+        cJenisKelamin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Laki - laki", "Perempuan" }));
+
         jLabel8.setText("Alamat");
 
         jLabel9.setText("HP");
@@ -841,8 +843,8 @@ try {
 }
  
 // Menentukan apakah foto diubah oleh pengguna
-boolean fotoDiubah = (fotoAsli == null && !filePath.isEmpty())
-        || (fotoAsli != null && !fotoAsli.equals(filePath));
+boolean fotoDiubah = (filePath  != null && !filePath.isEmpty()) && 
+         (fotoAsli == null || !fotoAsli.equals(filePath));
  
 // Jika foto diubah, variabel 'foto' akan diisi dengan path baru
 String foto = fotoAsli;
