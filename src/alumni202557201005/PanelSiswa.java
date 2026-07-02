@@ -764,7 +764,7 @@ try {
     JOptionPane.showMessageDialog(null, "Data berhasil disimpan!");
 } catch (SQLException e) {
     // Menampilkan pesan jika terjadi kesalahan saat menyimpan data
-    JOptionPane.showMessageDialog(null, "Data gagal disimpan!");
+    JOptionPane.showMessageDialog(null, "Data gagal disimpan!\n"+e.getMessage());
 }
  
 // Memuat ulang data siswa ke tabel

@@ -228,7 +228,8 @@ public class frameLogin extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            /*UIManager.put("Button.arc", 15);
+            /*
+            UIManager.put("Button.arc", 15);           
             UIManager.put("Button.borderWidth", 0);
             UIManager.put("TextComponent.arc", 15);
             UIManager.put("Component.BorderWidth", 0);

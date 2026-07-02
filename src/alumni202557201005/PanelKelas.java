@@ -34,7 +34,7 @@ public class PanelKelas extends javax.swing.JPanel {
         // Mengisi combo box wali kelas dari database 
         comboWali();
         
-        comboTingkatan();
+        
     }
     
     // Method untuk mengosongkan semua input form
@@ -221,22 +221,7 @@ public class PanelKelas extends javax.swing.JPanel {
         return "";
     }
     
-    void comboTingkatan() {
-    try {
-        String sql = "SELECT DISTINCT tingkatan FROM kelas";
-        Connection conn = koneksi.konek();
-        Statement statement = conn.createStatement();
-        ResultSet resultSet = statement.executeQuery(sql);
-
-        while (resultSet.next()) {
-            cTingkatan.addItem(resultSet.getString("tingkatan"));
-        }
-    } catch (SQLException e) {
-        
-    }
-
-    cTingkatan.setSelectedItem(null);
-}
+    
         
     /**
      * This method is called from within the constructor to initialize the form.
@@ -318,6 +303,8 @@ public class PanelKelas extends javax.swing.JPanel {
         jLabel3.setText("Tingkatan");
 
         jLabel4.setText("Jurusan");
+
+        cTingkatan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "10", "11", "12" }));
 
         cWali.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -432,10 +419,10 @@ public class PanelKelas extends javax.swing.JPanel {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addContainerGap(38, Short.MAX_VALUE)
-                .addComponent(btnTambah, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnTambah, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnUbah, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnHapus, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -550,7 +537,7 @@ public class PanelKelas extends javax.swing.JPanel {
         
         try {
             // Buat query SQL untuk mennyimpan data ke tabel kelas 
-            String sql = "INSERT INTO kelas (id_kelas, nama_kelas, tingkatan, kode_jur, nip_wali_kelas) VALUES(?,?,?,?)";
+            String sql = "INSERT INTO kelas (id_kelas, nama_kelas, tingkatan, kode_jur, nip_wali_kelas) VALUES(?,?,?,?,?)";
 
             // Buka koneksi ke database
             Connection conn = koneksi.konek();
@@ -572,7 +559,7 @@ public class PanelKelas extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Data berhasil disimpan!");
         } catch (SQLException sQLException) {
             // Jika terjadi error saat Menyimpan, tampilkan pesan gagal
-            JOptionPane.showMessageDialog(null, "Data gagal disimpan!");
+            JOptionPane.showMessageDialog(null, "Data gagal disimpan!\n"+sQLException.getMessage());
         }
         
         // Tampilkan kembali data kelas terbaru di tabel

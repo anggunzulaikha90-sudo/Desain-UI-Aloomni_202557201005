@@ -207,7 +207,12 @@
         <Component class="javax.swing.JComboBox" name="cTingkatan">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="0"/>
+              <StringArray count="4">
+                <StringItem index="0" value=" "/>
+                <StringItem index="1" value="10"/>
+                <StringItem index="2" value="11"/>
+                <StringItem index="3" value="12"/>
+              </StringArray>
             </Property>
           </Properties>
           <AuxValues>
@@ -265,10 +270,10 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="38" max="32767" attributes="0"/>
-                      <Component id="btnTambah" min="-2" pref="96" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="btnTambah" min="-2" pref="102" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Component id="btnUbah" min="-2" pref="96" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="btnHapus" min="-2" pref="96" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="btnReset" min="-2" pref="96" max="-2" attributes="0"/>
